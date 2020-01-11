@@ -3,8 +3,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Season 3</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <title>Season 3 Stock Data</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,21 +17,42 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="netflix_stock.html">Stock</a>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Seasons
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/Season1">Season 1</a>
+              <a class="dropdown-item" href="/Season2">Season 2</a>
+              <a class="dropdown-item" href="/Season3">Season 3</a>
+              <a class="dropdown-item" href="/Season4">Season 4</a>
+              <a class="dropdown-item" href="/Season5">Season 5</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Stock Information
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/S1">Season 1</a>
+              <a class="dropdown-item" href="/S2">Season 2</a>
+              <a class="dropdown-item" href="/S3">Season 3</a>
+              <a class="dropdown-item" href="/S4">Season 4</a>
+              <a class="dropdown-item" href="/S5">Season 5</a>
+              <a class="dropdown-item" href="/stock">Season 1-5</a>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="ratings.html">Ratings</a>
+            <a class="nav-link" href="/ratings">Ratings</a>
           </li>
         </ul>
     </div>
   </nav>
   <div class="container text-center">
-    <h1 class="jumbotron">Does Bojack Impact Netflix Cheddar Jack?</h1>
-
-   <h2>Netflix Stock Data Before and After Season 3 Release </h2>
-
-   <table border="1" class="dataframe season3"><thead><tr style="text-align: right;"><th></th><th>index</th><th>Month</th><th>Day</th><th>year</th><th>Opening Price</th><th>High Price</th><th>Low Price</th><th>Closing Price</th></tr><tr><th>Date</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><th>7/15/16</th><td>638</td><td>7</td><td>15</td><td>2016</td><td>98.52</td><td>98.700</td><td>97.41</td><td>98.39</td></tr><tr><th>7/18/16</th><td>639</td><td>7</td><td>18</td><td>2016</td><td>98.43</td><td>99.840</td><td>97.24</td><td>98.81</td></tr><tr><th>7/19/16</th><td>640</td><td>7</td><td>19</td><td>2016</td><td>85.43</td><td>86.750</td><td>84.50</td><td>85.84</td></tr><tr><th>7/20/16</th><td>641</td><td>7</td><td>20</td><td>2016</td><td>86.67</td><td>88.490</td><td>85.82</td><td>87.91</td></tr><tr><th>7/21/16</th><td>642</td><td>7</td><td>21</td><td>2016</td><td>88.30</td><td>88.380</td><td>85.21</td><td>85.99</td></tr><tr><th>7/22/16</th><td>643</td><td>7</td><td>22</td><td>2016</td><td>86.48</td><td>86.500</td><td>85.11</td><td>85.89</td></tr><tr><th>7/25/16</th><td>644</td><td>7</td><td>25</td><td>2016</td><td>85.73</td><td>87.870</td><td>85.01</td><td>87.66</td></tr><tr><th>7/26/16</th><td>645</td><td>7</td><td>26</td><td>2016</td><td>91.03</td><td>93.100</td><td>90.90</td><td>91.41</td></tr><tr><th>7/27/16</th><td>646</td><td>7</td><td>27</td><td>2016</td><td>91.50</td><td>92.060</td><td>90.10</td><td>92.04</td></tr><tr><th>7/28/16</th><td>647</td><td>7</td><td>28</td><td>2016</td><td>91.92</td><td>92.210</td><td>90.68</td><td>91.65</td></tr><tr><th>7/29/16</th><td>648</td><td>7</td><td>29</td><td>2016</td><td>91.19</td><td>91.749</td><td>90.59</td><td>91.25</td></tr></tbody></table>
+    <h1 class="jumbotron">Netflix Stock Data Before and After Season 3 Release</h1>
+    <h4>Release Date 7/22/16</h4>
+   <table align="center" border="1" class="dataframe season3"><thead><tr style="text-align: right;"><th></th><th>index</th><th>Month</th><th>Day</th><th>year</th><th>Opening Price</th><th>High Price</th><th>Low Price</th><th>Closing Price</th></tr><tr><th>Date</th><th></th><th></th><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><th>7/15/16</th><td>638</td><td>7</td><td>15</td><td>2016</td><td>98.52</td><td>98.700</td><td>97.41</td><td>98.39</td></tr><tr><th>7/18/16</th><td>639</td><td>7</td><td>18</td><td>2016</td><td>98.43</td><td>99.840</td><td>97.24</td><td>98.81</td></tr><tr><th>7/19/16</th><td>640</td><td>7</td><td>19</td><td>2016</td><td>85.43</td><td>86.750</td><td>84.50</td><td>85.84</td></tr><tr><th>7/20/16</th><td>641</td><td>7</td><td>20</td><td>2016</td><td>86.67</td><td>88.490</td><td>85.82</td><td>87.91</td></tr><tr><th>7/21/16</th><td>642</td><td>7</td><td>21</td><td>2016</td><td>88.30</td><td>88.380</td><td>85.21</td><td>85.99</td></tr><tr><th>7/22/16</th><td>643</td><td>7</td><td>22</td><td>2016</td><td>86.48</td><td>86.500</td><td>85.11</td><td>85.89</td></tr><tr><th>7/25/16</th><td>644</td><td>7</td><td>25</td><td>2016</td><td>85.73</td><td>87.870</td><td>85.01</td><td>87.66</td></tr><tr><th>7/26/16</th><td>645</td><td>7</td><td>26</td><td>2016</td><td>91.03</td><td>93.100</td><td>90.90</td><td>91.41</td></tr><tr><th>7/27/16</th><td>646</td><td>7</td><td>27</td><td>2016</td><td>91.50</td><td>92.060</td><td>90.10</td><td>92.04</td></tr><tr><th>7/28/16</th><td>647</td><td>7</td><td>28</td><td>2016</td><td>91.92</td><td>92.210</td><td>90.68</td><td>91.65</td></tr><tr><th>7/29/16</th><td>648</td><td>7</td><td>29</td><td>2016</td><td>91.19</td><td>91.749</td><td>90.59</td><td>91.25</td></tr></tbody></table align="center">
+  <br>
   </div>
 </body>
 

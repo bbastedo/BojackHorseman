@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Teams!</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -15,8 +17,30 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="/stock">Stock</a>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Seasons
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/Season1">Season 1</a>
+              <a class="dropdown-item" href="/Season2">Season 2</a>
+              <a class="dropdown-item" href="/Season3">Season 3</a>
+              <a class="dropdown-item" href="/Season4">Season 4</a>
+              <a class="dropdown-item" href="/Season5">Season 5</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Stock Information
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/S1">Season 1</a>
+              <a class="dropdown-item" href="/S2">Season 2</a>
+              <a class="dropdown-item" href="/S3">Season 3</a>
+              <a class="dropdown-item" href="/S4">Season 4</a>
+              <a class="dropdown-item" href="/S5">Season 5</a>
+              <a class="dropdown-item" href="/stock">Season 1-5</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/ratings">Ratings</a>
@@ -25,25 +49,26 @@
     </div>
   </nav>
   <div class="container text-center">
-    <h1 class="jumbotron">Does Bojack Impact Netflix Cheddar Jack?</h1>
+    <h1 class="jumbotron">$NFLX Stock Data Seasons 1-5</h1>
 
     <a class="col-md-6 p-5 text-decoration-none" href="/Season1">
-      <img class="card-img" src="/static/images/S1_Release.png" alt="$NFLX High Price Before and After Season 1 Release">
+      <img class="img-thumbnail" src="/static/images/S1_Release.png" alt="$NFLX High Price Before and After Season 1 Release">
   </a>
   <a class="col-md-6 p-5 text-decoration-none" href="/Season2">
-    <img class="card-img" src="/static/images/S2_Release.png" alt="$NFLX High Price Before and After Season 2 Release">
+    <img class="img-thumbnail" src="/static/images/S2_Release.png" alt="$NFLX High Price Before and After Season 2 Release">
 </a>
 <a class="col-md-6 p-5 text-decoration-none" href="/Season3">
-  <img class="card-img" src="/static/images/S3_Release.png" alt="$NFLX High Price Before and After Season 3 Release">
+  <img class="img-thumbnail" src="/static/images/S3_Release.png" alt="$NFLX High Price Before and After Season 3 Release">
 </a>
 <a class="col-md-6 p-5 text-decoration-none" href="/Season4">
-  <img class="card-img" src="/static/images/S4_Release.png" alt="$NFLX High Price Before and After Season 4 Release">
+  <img class="img-thumbnail" src="/static/images/S4_Release.png" alt="$NFLX High Price Before and After Season 4 Release">
 </a>
 <a class="col-md-6 p-5 text-decoration-none" href="/Season5">
-  <img class="card-img" src="/static/images/S5_Release.png" alt="$NFLX High Price Before and After Season 5 Release">
+  <img class="img-thumbnail" src="/static/images/S5_Release.png" alt="$NFLX High Price Before and After Season 5 Release">
 </a>
-
+<br>
   </div>
 </body>
+<footer>&copy; Ben Bastedo 2020</footer>
 
 </html>
